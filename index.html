@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Note-Taking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Note-Taking App</h1>
+        <div class="controls">
+            <input type="text" id="searchBar" placeholder="Search notes..." onkeyup="searchNotes()">
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+        <div class="note-input">
+            <textarea id="noteContent" placeholder="Type your note here..."></textarea>
+            <input type="text" id="noteCategory" placeholder="Category (optional)">
+            <input type="color" id="noteColor" value="#ffffff">
+            <button onclick="addNote()">Add Note</button>
+        </div>
+        <div class="notes-list" id="notesList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

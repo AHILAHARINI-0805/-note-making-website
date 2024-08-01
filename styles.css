@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF5E1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #E7F0DC;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.controls input, .controls button {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.note-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.note-input textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.note-input input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.note-input input[type="color"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.note-input button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note-input button:hover {
+    background-color: #218838;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.note {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #E7F0DC;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.note-category {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.note-content {
+    margin-bottom: 10px;
+}
+
+.note-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.note-actions button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.note-actions button:hover {
+    background-color: #c82333;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .note {
+    background-color: #444;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode textarea, .dark-mode input {
+    background-color: #555;
+    color: white;
+    border-color: #666;
+}
+
+.dark-mode .note-input button {
+    background-color: #28a745;
+    color: white;
+}
+
+.dark-mode .note-input button:hover {
+    background-color: #218838;
+}
